@@ -59,7 +59,7 @@ export default function HeroSection() {
                 viewport={{ once: true }}
                 transition={{ delay: 0.1, duration: 0.5 }}
             >
-                Data Scientist . Software Engineer . AI/ML Engineer
+                Data Scientist | Software Engineer | AI/ML Engineer
             </motion.h2>
 
             {/* Description */}
