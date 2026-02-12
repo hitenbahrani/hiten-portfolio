@@ -6,88 +6,111 @@ export default function OurLatestCreation() {
     const [selectedProject, setSelectedProject] = useState(null);
 
     const projects = [
+        // =========================
+        // PROJECT 1 — AI RESEARCH ASSISTANT
+        // =========================
+        {
+            title: "AI Research Assistant",
+            shortDescription:
+                "Full-stack AI assistant with local LLM inference + real-time web search, deployed on Vercel.",
+            description:
+                "A production-ready AI Research Assistant powered by a locally hosted Mistral model using llama.cpp. The system combines FastAPI backend inference, optional real-time web search grounding, conversation memory, and a modern React frontend deployed on Vercel.",
+
+            metrics: [
+                { label: "Category", value: "AI Application" },
+                { label: "Focus", value: "LLM + Web Search" },
+                { label: "Status", value: "Deployed" },
+            ],
+
+            stack: [
+                "Python",
+                "FastAPI",
+                "llama.cpp",
+                "Mistral-7B",
+                "React",
+                "Vercel",
+                "DuckDuckGo Search",
+            ],
+
+            live: "https://ai-research-assistant-web.vercel.app/",
+            github: "https://github.com/hitenbahrani/ai-research-assistant",
+
+            // 🔥 Screenshot preview for card
+            previewImage:
+                "/projects/ai-research-assistant/ai-research-assistant.png",
+
+            // 🔥 Screenshots for modal
+            screenshots: [
+                "/projects/ai-research-assistant/ai-research-assistant.png",
+            ],
+
+            details: {
+                highlights: [
+                    "Local LLM inference using llama.cpp + Mistral 7B",
+                    "FastAPI backend with structured chat completion",
+                    "Optional real-time web search grounding",
+                    "Context-based strict grounding mode",
+                    "Deployed frontend on Vercel",
+                ],
+                architecture: [
+                    "React (Vite) frontend deployed on Vercel",
+                    "FastAPI backend for LLM orchestration",
+                    "llama.cpp model loading with GPU/CPU control",
+                    "Web search augmentation using DuckDuckGo",
+                    "Conversation history handling with structured prompts",
+                ],
+            },
+        },
+
+        // =========================
+        // PROJECT 2 — DECISION INTELLIGENCE
+        // =========================
         {
             title: "AI Decision Intelligence & Governance Platform",
             shortDescription:
-                "Built an enterprise-style AI decision governance system simulating how regulated organizations deploy AI responsibly.",
+                "Enterprise-style AI governance simulation platform.",
             description:
-                "Built an enterprise-style AI decision governance system simulating how regulated organizations deploy AI responsibly. The platform enforces policy-driven credit decisions, provides SHAP-based explanations, audits fairness using disparate impact metrics, and delivers insights through an executive Streamlit dashboard.",
+                "Enterprise AI decision governance system simulating policy-driven decisions, explainability with SHAP, and fairness auditing via 80% rule checks.",
+
             metrics: [
-                { label: "Type", value: "AI / Decision Intelligence" },
-                { label: "Stack", value: "Python · ML · Governance" },
+                { label: "Category", value: "AI Governance" },
+                { label: "Focus", value: "ML + Responsible AI" },
                 { label: "Status", value: "Completed" },
             ],
+
             stack: [
                 "Python",
                 "Scikit-learn",
                 "SHAP",
                 "Streamlit",
-                "Responsible AI",
                 "Fairness Auditing",
             ],
-            github: "https://github.com/hitenbahrani/ai-decision-intelligence-platform",
 
-            // ✅ Details that show in popup
+            github:
+                "https://github.com/hitenbahrani/ai-decision-intelligence-platform",
+
+            previewImage:
+                "/projects/ai-decision-intelligence-governance/dashboard-overview.png",
+
+            screenshots: [
+                "/projects/ai-decision-intelligence-governance/dashboard-overview.png",
+            ],
+
             details: {
                 highlights: [
-                    "Policy-driven credit decisions (approve / review / reject)",
-                    "SHAP-based explainability with regulator-friendly reason codes",
-                    "Fairness auditing using disparate impact + 80% rule checks",
-                    "Offline model governance with approved artifacts only",
-                    "Executive-facing Streamlit dashboard for decision insights",
+                    "Policy-driven credit decision simulation",
+                    "SHAP explainability engine",
+                    "Fairness auditing via disparate impact",
+                    "Model artifact governance",
+                    "Executive Streamlit dashboard",
                 ],
                 architecture: [
-                    "Offline model training & evaluation",
-                    "Artifact promotion (models, thresholds, reports)",
-                    "Policy engine for decision control",
-                    "Explainability & fairness audit layer",
-                    "Read-only executive dashboard",
+                    "Offline model training & validation",
+                    "Policy engine for decision rules",
+                    "Explainability + fairness audit layer",
+                    "Executive read-only dashboard",
                 ],
             },
-        },
-        {
-            title: "Project 2",
-            description:
-                "Placeholder project description. Focus on technical depth or real-world relevance.",
-            metrics: [
-                { label: "Type", value: "TBD" },
-                { label: "Stack", value: "TBD" },
-                { label: "Status", value: "Planned" },
-            ],
-            stack: ["Databricks", "Spark", "Delta Lake"],
-        },
-        {
-            title: "Project 3",
-            description:
-                "Placeholder project description. Highlight data, ML, or system design aspects.",
-            metrics: [
-                { label: "Type", value: "TBD" },
-                { label: "Stack", value: "TBD" },
-                { label: "Status", value: "Planned" },
-            ],
-            stack: ["Machine Learning", "Python", "Pandas"],
-        },
-        {
-            title: "Project 4",
-            description:
-                "Placeholder project description. Describe your contribution and tools used.",
-            metrics: [
-                { label: "Type", value: "TBD" },
-                { label: "Stack", value: "TBD" },
-                { label: "Status", value: "Planned" },
-            ],
-            stack: ["React", "Tailwind", "Framer Motion"],
-        },
-        {
-            title: "Project 5",
-            description:
-                "Placeholder project description. Replace this once you build the project.",
-            metrics: [
-                { label: "Type", value: "TBD" },
-                { label: "Stack", value: "TBD" },
-                { label: "Status", value: "Planned" },
-            ],
-            stack: ["TBD"],
         },
     ];
 
@@ -95,11 +118,10 @@ export default function OurLatestCreation() {
         <section id="projects" className="mt-32">
             <SectionTitle
                 title="Featured Projects"
-                description="A curated set of projects focused on data, analytics, and AI — designed with clarity, impact, and scalability."
+                description="High-impact AI systems combining engineering depth, deployment, and real-world architecture."
             />
 
-            {/* Cards */}
-            <div className="mt-16 grid gap-6 md:grid-cols-2">
+            <div className="mt-16 grid gap-8 md:grid-cols-2">
                 {projects.map((project, index) => (
                     <motion.div
                         key={project.title}
@@ -113,9 +135,20 @@ export default function OurLatestCreation() {
                             stiffness: 260,
                             damping: 50,
                         }}
-                        onClick={() => setSelectedProject(project.details ? project : null)}
+                        onClick={() =>
+                            setSelectedProject(project.details ? project : null)
+                        }
                     >
-                        {/* Metrics row */}
+                        {/* 🔥 Screenshot Preview */}
+                        {project.previewImage && (
+                            <img
+                                src={project.previewImage}
+                                alt={project.title}
+                                className="rounded-xl mb-6 border border-white/10"
+                            />
+                        )}
+
+                        {/* Metrics */}
                         <div className="grid grid-cols-3 gap-4 mb-6">
                             {project.metrics.map((metric) => (
                                 <div
@@ -132,16 +165,14 @@ export default function OurLatestCreation() {
                             ))}
                         </div>
 
-                        {/* Project info */}
                         <h3 className="text-lg font-semibold text-white">
                             {project.title}
                         </h3>
 
                         <p className="mt-2 text-sm text-white/70">
-                            {project.shortDescription || project.description}
+                            {project.shortDescription}
                         </p>
 
-                        {/* Tech stack */}
                         <div className="mt-5 flex flex-wrap gap-2">
                             {project.stack.map((tech) => (
                                 <span
@@ -153,54 +184,59 @@ export default function OurLatestCreation() {
                             ))}
                         </div>
 
-                        {/* GitHub link only for Project 1 */}
-                        {project.github && (
-                            <div className="mt-6">
+                        {/* Buttons */}
+                        <div className="mt-6 flex gap-4 flex-wrap">
+                            {project.live && (
+                                <a
+                                    href={project.live}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    onClick={(e) => e.stopPropagation()}
+                                    className="px-4 py-2 rounded-lg border border-white/20 text-sm hover:bg-white/10 transition"
+                                >
+                                    Live App →
+                                </a>
+                            )}
+
+                            {project.github && (
                                 <a
                                     href={project.github}
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     onClick={(e) => e.stopPropagation()}
-                                    className="inline-block text-sm font-medium text-white underline underline-offset-4 hover:text-white/80"
+                                    className="px-4 py-2 rounded-lg border border-white/20 text-sm hover:bg-white/10 transition"
                                 >
-                                    View on GitHub →
+                                    Source Code →
                                 </a>
-                            </div>
-                        )}
-
-                        {/* View details hint only if it has details */}
-                        {project.details && (
-                            <div className="mt-4 text-xs text-white/50 hover:text-white/80 transition">
-                                Click to view details →
-                            </div>
-                        )}
+                            )}
+                        </div>
                     </motion.div>
                 ))}
             </div>
 
-            {/* Modal */}
+            {/* ========================= */}
+            {/* MODAL */}
+            {/* ========================= */}
             <AnimatePresence>
                 {selectedProject && (
                     <motion.div
-                        className="fixed inset-0 z-50 flex items-center justify-center bg-black/70 px-4"
+                        className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 px-4 overflow-y-auto"
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         exit={{ opacity: 0 }}
                         onClick={() => setSelectedProject(null)}
                     >
                         <motion.div
-                            className="w-full max-w-2xl rounded-2xl border border-white/10 bg-[#0b1220]/95 backdrop-blur p-8 relative"
-                            initial={{ y: 40, opacity: 0, scale: 0.98 }}
-                            animate={{ y: 0, opacity: 1, scale: 1 }}
-                            exit={{ y: 30, opacity: 0, scale: 0.98 }}
-                            transition={{ type: "spring", stiffness: 260, damping: 28 }}
+                            className="w-full max-w-3xl rounded-2xl border border-white/10 bg-[#0b1220]/95 backdrop-blur p-8 relative"
+                            initial={{ y: 40, opacity: 0 }}
+                            animate={{ y: 0, opacity: 1 }}
+                            exit={{ y: 30, opacity: 0 }}
+                            transition={{ type: "spring", stiffness: 260 }}
                             onClick={(e) => e.stopPropagation()}
                         >
-                            {/* Close button */}
                             <button
                                 onClick={() => setSelectedProject(null)}
                                 className="absolute right-4 top-4 text-white/60 hover:text-white text-lg"
-                                aria-label="Close"
                             >
                                 ✕
                             </button>
@@ -209,9 +245,24 @@ export default function OurLatestCreation() {
                                 {selectedProject.title}
                             </h2>
 
-                            <p className="mt-2 text-sm text-white/70">
+                            <p className="mt-3 text-sm text-white/70">
                                 {selectedProject.description}
                             </p>
+
+                            {/* Screenshots inside modal */}
+                            {selectedProject.screenshots && (
+                                <div className="mt-6 grid gap-4">
+                                    {selectedProject.screenshots.map(
+                                        (img, i) => (
+                                            <img
+                                                key={i}
+                                                src={img}
+                                                className="rounded-xl border border-white/10"
+                                            />
+                                        )
+                                    )}
+                                </div>
+                            )}
 
                             {/* Highlights */}
                             <div className="mt-6">
@@ -219,9 +270,11 @@ export default function OurLatestCreation() {
                                     Key Highlights
                                 </h3>
                                 <ul className="space-y-2 text-sm text-white/70 list-disc pl-5">
-                                    {selectedProject.details.highlights.map((item) => (
-                                        <li key={item}>{item}</li>
-                                    ))}
+                                    {selectedProject.details.highlights.map(
+                                        (item) => (
+                                            <li key={item}>{item}</li>
+                                        )
+                                    )}
                                 </ul>
                             </div>
 
@@ -231,37 +284,13 @@ export default function OurLatestCreation() {
                                     System Architecture
                                 </h3>
                                 <ul className="space-y-2 text-sm text-white/70 list-disc pl-5">
-                                    {selectedProject.details.architecture.map((item) => (
-                                        <li key={item}>{item}</li>
-                                    ))}
+                                    {selectedProject.details.architecture.map(
+                                        (item) => (
+                                            <li key={item}>{item}</li>
+                                        )
+                                    )}
                                 </ul>
                             </div>
-
-                            {/* Stack chips */}
-                            <div className="mt-6 flex flex-wrap gap-2">
-                                {selectedProject.stack.map((tech) => (
-                                    <span
-                                        key={tech}
-                                        className="rounded-full border border-white/15 bg-white/5 px-3 py-1 text-xs text-white/80"
-                                    >
-                                        {tech}
-                                    </span>
-                                ))}
-                            </div>
-
-                            {/* GitHub button */}
-                            {selectedProject.github && (
-                                <div className="mt-6">
-                                    <a
-                                        href={selectedProject.github}
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        className="inline-block text-sm font-medium text-white underline underline-offset-4 hover:text-white/80"
-                                    >
-                                        View on GitHub →
-                                    </a>
-                                </div>
-                            )}
                         </motion.div>
                     </motion.div>
                 )}
