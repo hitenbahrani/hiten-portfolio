@@ -15,7 +15,7 @@ export default function OurTestimonials() {
             ],
         },
         {
-            role: "Frontend Developer Intern",
+            role: "Data Scientist Intern",
             org: "ParticleBlack · Chennai, India",
             duration: "Jun 2024 – Dec 2024",
             points: [
