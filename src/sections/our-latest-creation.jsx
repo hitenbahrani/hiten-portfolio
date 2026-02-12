@@ -48,8 +48,7 @@ export default function OurLatestCreation() {
         },
         {
             title: "AI Decision Intelligence & Governance Platform",
-            shortDescription:
-                "Enterprise-style AI governance simulation platform.",
+            shortDescription: "Enterprise-style AI governance simulation platform.",
             description:
                 "Built an enterprise-style AI decision governance system simulating how regulated organizations deploy AI responsibly. The platform enforces policy-driven decisions, provides SHAP explainability, audits fairness, and delivers executive dashboard insights.",
             metrics: [
@@ -190,23 +189,28 @@ export default function OurLatestCreation() {
             <AnimatePresence>
                 {selectedProject && (
                     <motion.div
-                        className="fixed inset-0 z-50 flex items-center justify-center bg-black/70 px-4"
+                        // IMPORTANT: make overlay scrollable + start aligned
+                        className="fixed inset-0 z-50 bg-black/70 px-4 py-10 overflow-y-auto"
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         exit={{ opacity: 0 }}
                         onClick={() => setSelectedProject(null)}
                     >
                         <motion.div
-                            className="relative w-full max-w-5xl max-h-[90vh] overflow-y-auto rounded-2xl border border-white/10 bg-[#0b1220] p-8"
-                            initial={{ y: 40, opacity: 0 }}
+                            // IMPORTANT: Lenis scroll bypass + real scrolling area
+                            data-lenis-prevent
+                            className="relative w-full max-w-5xl mx-auto rounded-2xl border border-white/10 bg-[#0b1220] p-8
+                                       max-h-[calc(100vh-5rem)] overflow-y-auto"
+                            initial={{ y: 30, opacity: 0 }}
                             animate={{ y: 0, opacity: 1 }}
-                            exit={{ y: 30, opacity: 0 }}
+                            exit={{ y: 20, opacity: 0 }}
                             transition={{ type: "spring", stiffness: 260, damping: 28 }}
                             onClick={(e) => e.stopPropagation()}
                         >
                             <button
                                 onClick={() => setSelectedProject(null)}
                                 className="absolute right-6 top-6 text-white/60 hover:text-white text-lg"
+                                aria-label="Close"
                             >
                                 ✕
                             </button>
@@ -234,11 +238,9 @@ export default function OurLatestCreation() {
                                         Key Highlights
                                     </h3>
                                     <ul className="space-y-2 text-sm text-white/70 list-disc pl-5">
-                                        {selectedProject.details.highlights.map(
-                                            (item) => (
-                                                <li key={item}>{item}</li>
-                                            )
-                                        )}
+                                        {selectedProject.details.highlights.map((item) => (
+                                            <li key={item}>{item}</li>
+                                        ))}
                                     </ul>
                                 </div>
 
@@ -247,14 +249,15 @@ export default function OurLatestCreation() {
                                         System Architecture
                                     </h3>
                                     <ul className="space-y-2 text-sm text-white/70 list-disc pl-5">
-                                        {selectedProject.details.architecture.map(
-                                            (item) => (
-                                                <li key={item}>{item}</li>
-                                            )
-                                        )}
+                                        {selectedProject.details.architecture.map((item) => (
+                                            <li key={item}>{item}</li>
+                                        ))}
                                     </ul>
                                 </div>
                             </div>
+
+                            {/* Bottom spacing so last lines never feel cut */}
+                            <div className="h-6" />
                         </motion.div>
                     </motion.div>
                 )}
