@@ -59,7 +59,7 @@ export default function HeroSection() {
                 viewport={{ once: true }}
                 transition={{ delay: 0.1, duration: 0.5 }}
             >
-                Data Scientist | Software Engineer | AI/ML Engineer
+                Data Analyst | Business Intelligence | Machine Learning
             </motion.h2>
 
             {/* Description */}
@@ -70,9 +70,9 @@ export default function HeroSection() {
                 viewport={{ once: true }}
                 transition={{ delay: 0.2, duration: 0.5 }}
             >
-                I build data-driven systems that move beyond dashboards — from analytics
-                pipelines to intelligent AI applications. Currently pursuing my Master’s
-                in Information Systems at UTA, focused on scalable, real-world impact.
+                Data Analyst and MS Information Systems candidate who turns operational
+                data into clear insights with Python, SQL, Tableau, and Power BI. Currently
+                a Graduate Teaching Assistant at the University of Texas at Arlington.
             </motion.p>
 
             {/* CTA buttons */}

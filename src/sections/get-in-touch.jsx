@@ -7,7 +7,7 @@ export default function GetInTouch() {
         <section id="contact" className="mt-40">
             <SectionTitle
                 title="Get in Touch"
-                description="Interested in collaborating on AI projects or have a question? I'd love to hear from you."
+                description="Interested in data, analytics, or machine learning work? I’d love to connect."
             />
 
             <div className="mt-20 max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-14 items-start">
@@ -24,9 +24,9 @@ export default function GetInTouch() {
                     </h3>
 
                     <p className="mt-4 text-sm text-white/60 max-w-md">
-                        Whether you’re looking for a Data Scientist, research collaborator,
-                        or just want to chat about machine learning — I’m always open to
-                        meaningful conversations.
+                        Whether you’re looking for a data analyst, a business intelligence
+                        collaborator, or someone to discuss machine learning, I’m always open
+                        to meaningful conversations.
                     </p>
 
                     {/* Info cards */}
@@ -35,9 +35,9 @@ export default function GetInTouch() {
                             <Mail className="size-5 text-indigo-400" />
                             <div>
                                 <p className="text-xs text-white/50">Email</p>
-                                <p className="text-sm text-white">
+                                <a href="mailto:bahranihiten@gmail.com" className="text-sm text-white hover:text-indigo-300 transition">
                                     bahranihiten@gmail.com
-                                </p>
+                                </a>
                             </div>
                         </div>
 
@@ -48,6 +48,16 @@ export default function GetInTouch() {
                                 <p className="text-sm text-white">
                                     Arlington, Texas
                                 </p>
+                            </div>
+                        </div>
+
+                        <div className="flex items-center gap-4 rounded-xl border border-white/10 bg-white/5 px-4 py-3">
+                            <Mail className="size-5 text-indigo-400" />
+                            <div>
+                                <p className="text-xs text-white/50">Phone</p>
+                                <a href="tel:+12066653244" className="text-sm text-white hover:text-indigo-300 transition">
+                                    +1 (206) 665-3244
+                                </a>
                             </div>
                         </div>
                     </div>

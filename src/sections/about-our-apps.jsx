@@ -6,38 +6,38 @@ export default function AboutOurApps() {
         {
             title: "Data & Analytics",
             description:
-                "Hands-on experience transforming raw data into insights using analytics, visualization, and statistical techniques.",
+                "Preparing, analyzing, and reporting on data through reproducible Python and SQL workflows.",
             skills: [
                 "Python",
                 "SQL",
                 "Pandas",
                 "NumPy",
-                "Power BI",
+                "ETL",
+                "Feature Engineering",
+            ],
+        },
+        {
+            title: "Business Intelligence",
+            description:
+                "Building dashboards and visual reporting that translate operational data into stakeholder-ready insight.",
+            skills: [
                 "Tableau",
+                "Power BI",
+                "Dashboard Development",
+                "Matplotlib",
+                "Seaborn",
+                "Statistical Analysis",
             ],
         },
         {
             title: "Machine Learning & AI",
             description:
-                "Building intelligent systems with modern ML techniques, large language models, and evaluation-driven workflows.",
+                "Applying machine learning, explainability, retrieval, and cloud tools to data-driven applications.",
             skills: [
-                "Machine Learning",
-                "LLMs",
-                "Prompt Engineering",
+                "Scikit-learn",
+                "SHAP",
+                "FastAPI",
                 "RAG",
-                "Feature Engineering",
-                "Model Evaluation",
-            ],
-        },
-        {
-            title: "Data Engineering & Tools",
-            description:
-                "Designing scalable pipelines and working with modern data platforms for real-world analytics use cases.",
-            skills: [
-                "ETL / ELT",
-                "Databricks",
-                "Delta Lake",
-                "Apache Spark",
                 "AWS",
                 "Git",
             ],

@@ -1,6 +1,6 @@
 # 🌐 Hiten Bahrani — Portfolio Website
 
-This repository contains the source code for my **personal portfolio website**, showcasing my work as a **Data Scientist** with a focus on **AI, analytics, and decision intelligence systems**.
+This repository contains the source code for my **personal portfolio website**, showcasing my work as a **Data Analyst** with a focus on **business intelligence, analytics, machine learning, and AI applications**.
 
 🔗 **Live Website:**  
 👉 https://hiten-portfolio-zeta.vercel.app

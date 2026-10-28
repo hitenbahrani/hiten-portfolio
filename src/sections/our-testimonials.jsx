@@ -9,29 +9,41 @@ export default function OurTestimonials() {
             org: "University of Texas at Arlington",
             duration: "Jan 2026 – Present",
             points: [
-                "Analyzed student performance data across assignments and exams to identify common error patterns in Python logic, output formatting, and edge cases.",
-                "Applied structured grading rubrics and scoring datasets to ensure consistent and fair evaluation across a large volume of submissions.",
-                "Generated data-driven feedback reports highlighting frequent mistakes and improvement areas, contributing to improved overall class performance.",
+                "Evaluated high-volume Python programming assignments with consistent grading rubrics and close attention to data structures, algorithms, and edge-case correctness.",
+                "Applied structured partial-credit criteria to ensure accurate, fair, and efficient evaluation across student submissions.",
+                "Tracked recurring error patterns across cohorts, including off-by-one errors, mutation bugs, and performance issues, and shared key trends with the course instructor.",
             ],
         },
         {
-            role: "Data Scientist Intern",
-            org: "ParticleBlack · Chennai, India",
+            role: "Data Analyst",
+            org: "ParticleBlack",
             duration: "Jun 2024 – Dec 2024",
             points: [
-                "Built ETL pipelines to preprocess 50,000+ interaction logs and performed feature engineering to support predictive modeling workflows.",
-                "Developed predictive models using Python, Pandas, and scikit-learn, improving response accuracy by 25% and reducing resolution time by 30%.",
-                "Designed interactive dashboards using Tableau and Power BI to track key metrics, improving application efficiency by 15%.",
+                "Built Python and SQL ETL workflows using joins, aggregations, and windowed metrics to prepare more than 50,000 conversational interaction logs for analysis and modelling.",
+                "Analyzed conversation metadata, including turn count, intent transitions, and session length, to identify factors associated with query resolution and support chatbot-routing decisions.",
+                "Developed Tableau and Power BI dashboards to monitor chatbot resolution rates and surface performance trends and potential model-drift signals for stakeholders.",
             ],
         },
         {
-            role: "Data Scientist Intern",
-            org: "YHills · Noida, India",
-            duration: "Jun 2023 – Dec 2023",
+            role: "Data Analyst",
+            org: "Mohan Group",
+            duration: "Dec 2022 – Jun 2024",
             points: [
-                "Collected and preprocessed 10,000+ trip records with advanced feature engineering on distance, time, and traffic patterns.",
-                "Built a Taxi Fare Prediction model achieving 92% accuracy and reducing prediction error by 18%.",
-                "Optimized training pipelines on AWS (EC2, S3), reducing model training time by 25% and improving scalability.",
+                "Integrated four record types - property, lead, booking, and payment - using SQL and Python, then built Power BI dashboards for inventory, sales velocity, conversion rates, and overdue collections.",
+                "Analyzed lead-to-visit and visit-to-booking conversion metrics by marketing channel and response time to identify drop-off points and guide sales follow-up.",
+                "Evaluated development sites using ArcGIS, demographics, competitor pricing, transport access, and historical sales to support management’s site-selection decisions.",
+                "Mapped buyer and lead locations to define customer catchments, assess overlap between developments, and identify market-coverage gaps.",
+                "Documented data sources, quality checks, and site-scoring assumptions to support reproducible reporting and analysis.",
+            ],
+        },
+        {
+            role: "Data Scientist and Machine Learning Trainee",
+            org: "YHills",
+            duration: "Jun 2022 – Sep 2022",
+            points: [
+                "Prepared and analyzed a dataset of 10,000+ taxi trip records to examine how distance, time of day, and traffic conditions influenced fare estimates.",
+                "Built and evaluated linear regression and random forest models to compare predictive performance across fare-prediction approaches.",
+                "Set up AWS EC2 and S3 resources to support repeatable dataset storage and model-training workflows outside the local environment.",
             ],
         },
     ];
@@ -40,7 +52,7 @@ export default function OurTestimonials() {
         <section className="relative mt-36" id="experience">
             <SectionTitle
                 title="Work Experience"
-                description="A timeline of my hands-on experience across data science, analytics, and software engineering roles."
+                description="Hands-on experience across data analysis, business intelligence, machine learning, and Python instruction."
             />
 
             <div className="relative mt-20 max-w-4xl mx-auto">

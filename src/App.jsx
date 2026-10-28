@@ -5,6 +5,7 @@ import Navbar from "./components/navbar";
 import AboutOurApps from "./sections/about-our-apps";
 import HeroSection from "./sections/hero-section";
 import OurLatestCreation from "./sections/our-latest-creation";
+import EducationAndCertifications from "./sections/education-and-certifications";
 
 export default function Page() {
     return (
@@ -16,6 +17,7 @@ export default function Page() {
                 <OurLatestCreation />
                 <AboutOurApps />
                 <OurTestimonials />
+                <EducationAndCertifications />
                 <GetInTouch />
             </main>
         </>

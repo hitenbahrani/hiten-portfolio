@@ -7,61 +7,61 @@ export default function OurLatestCreation() {
 
     const projects = [
         {
-            title: "AI Research Assistant",
+            title: "LLM-Powered Research Assistant",
             shortDescription:
-                "Full-stack AI assistant with local LLM inference + real-time web search.",
+                "Full-stack research assistant with web retrieval, grounded responses, memory, and citations.",
             description:
-                "A production-ready AI Research Assistant powered by a locally hosted Mistral model using llama.cpp. The system combines FastAPI backend inference, optional real-time web search grounding, conversation memory, and a modern React frontend deployed on Vercel.",
+                "Built a full-stack research assistant that combines LLM responses with optional web retrieval for time-sensitive queries. A FastAPI backend routes queries and retrieves relevant sources, while the React frontend provides conversational memory, structured responses, and inline citations.",
             metrics: [
                 { label: "Category", value: "AI Application" },
-                { label: "Focus", value: "LLM + Web Search" },
-                { label: "Status", value: "Deployed" },
+                { label: "Focus", value: "RAG + Retrieval" },
+                { label: "Timeline", value: "Nov 2025 - Feb 2026" },
             ],
             stack: [
                 "Python",
                 "FastAPI",
-                "llama.cpp",
-                "Mistral-7B",
                 "React",
+                "RAG",
+                "REST APIs",
                 "Vercel",
-                "DuckDuckGo Search",
+                "Render",
             ],
             image: "/projects/ai-research-assistant/ai-research-assistant.png",
             live: "https://ai-research-assistant-web.vercel.app/",
             github: "https://github.com/hitenbahrani/ai-research-assistant",
             details: {
                 highlights: [
-                    "Local LLM inference using llama.cpp + Mistral 7B",
-                    "FastAPI backend with structured chat completion",
-                    "Optional real-time web search grounding",
-                    "Context-based strict grounding mode",
-                    "Modern React frontend deployed on Vercel",
+                    "LLM responses paired with optional web retrieval for time-sensitive queries",
+                    "FastAPI backend that routes queries and retrieves relevant sources",
+                    "React interface with conversational memory and structured responses",
+                    "Inline source citations for grounded answers",
+                    "Deployed across Vercel and Render",
                 ],
                 architecture: [
-                    "React (Vite) frontend deployed on Vercel",
-                    "FastAPI backend for LLM orchestration",
-                    "llama.cpp model loading with CPU/GPU control",
-                    "Web search augmentation using DuckDuckGo",
-                    "Environment-based deployment architecture",
+                    "React frontend for the research experience",
+                    "FastAPI service for request routing and retrieval",
+                    "Relevant-source retrieval to ground model context",
+                    "Structured answer and citation presentation",
+                    "Vercel and Render deployment",
                 ],
             },
         },
         {
-            title: "AI Decision Intelligence & Governance Platform",
-            shortDescription: "Enterprise-style AI governance simulation platform.",
+            title: "ML Decision Support with Explainability",
+            shortDescription: "Rule-based decision support with SHAP explainability and fairness diagnostics.",
             description:
-                "Built an enterprise-style AI decision governance system simulating how regulated organizations deploy AI responsibly. The platform enforces policy-driven decisions, provides SHAP explainability, audits fairness, and delivers executive dashboard insights.",
+                "Built a rule-based decision-support tool that routes low-confidence predictions for human review. The project uses SHAP to examine prediction drivers and subgroup performance, with a Streamlit dashboard for confidence, threshold trade-offs, and fairness diagnostics.",
             metrics: [
-                { label: "Category", value: "AI Governance" },
-                { label: "Focus", value: "ML + Responsible AI" },
-                { label: "Status", value: "Completed" },
+                { label: "Category", value: "ML Decision Support" },
+                { label: "Focus", value: "Explainability + Fairness" },
+                { label: "Timeline", value: "May - Jun 2025" },
             ],
             stack: [
                 "Python",
                 "Scikit-learn",
                 "SHAP",
                 "Streamlit",
-                "Fairness Auditing",
+                "Fairness Diagnostics",
             ],
             image:
                 "/projects/ai-decision-intelligence-governance-platform/dashboard-overview.png",
@@ -69,18 +69,18 @@ export default function OurLatestCreation() {
                 "https://github.com/hitenbahrani/ai-decision-intelligence-platform",
             details: {
                 highlights: [
-                    "Policy-driven credit decisions",
-                    "SHAP-based explainability",
-                    "Fairness auditing using 80% rule",
-                    "Offline model governance",
-                    "Executive Streamlit dashboard",
+                    "Rule-based policy thresholds for low-confidence predictions",
+                    "Human-review routing for low-confidence decisions",
+                    "SHAP analysis of factors influencing individual predictions",
+                    "Subgroup performance review for potential fairness gaps",
+                    "Stakeholder-facing Streamlit dashboard",
                 ],
                 architecture: [
-                    "Offline training & evaluation",
-                    "Artifact promotion pipeline",
-                    "Policy decision engine",
-                    "Explainability & fairness layer",
-                    "Read-only executive dashboard",
+                    "Predictive model produces a confidence score",
+                    "Policy layer evaluates decision thresholds",
+                    "Low-confidence cases are routed for human review",
+                    "SHAP and subgroup analysis provide diagnostic context",
+                    "Streamlit interface exposes confidence and fairness trade-offs",
                 ],
             },
         },
@@ -90,7 +90,7 @@ export default function OurLatestCreation() {
         <section id="projects" className="mt-32">
             <SectionTitle
                 title="Featured Projects"
-                description="Production-ready AI systems focused on real-world impact and scalability."
+                description="Selected analytics and AI projects centered on explainability, retrieval, and practical decision support."
             />
 
             {/* Cards */}
